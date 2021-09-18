@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_light_background"
+
+    android:layout_height="180dp">
+    <androidx.cardview.widget.CardView
+
+        android:layout_margin="10dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/image"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@color/cardview_light_background"
+
+            android:layout_height="100dp"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="100dp"
+            android:lines="2"
+            android:layout_marginLeft="160dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+
+            android:text="Id doafd fads  dasfasdf a safdaf aoij dsafasdijoi fasd asfdiojioafsdasfasd ff asdf as f "
+            android:textSize="19sp"
+            android:ellipsize="end"
+            android:ems  = "3"
+            android:id="@+id/id"/>
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:textSize="20sp"
+            android:padding="8dp"
+           android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:layout_gravity="bottom|end"
+
+            android:id="@+id/slug"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:visibility="gone"
+
+            android:layout_height="wrap_content"
+            android:text="android developer"
+            android:id="@+id/type"/>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

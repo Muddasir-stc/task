@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical"
+        android:gravity="fill_vertical"
+
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover"
+            android:id="@+id/discover"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="60dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News  from all world "
+            android:padding="10dp"
+            android:layout_margin="14dp"
+            android:id="@+id/label"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/discover"
+            android:textSize="13dp"/>
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@color/cardview_shadow_start_color"
+
+            android:layout_below="@+id/label"
+            android:id="@+id/search_bar"/>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_height="match_parent"
+            android:layout_marginTop="19dp"
+            android:id="@+id/tabMode"
+          android:layout_below="@+id/search_bar"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:text="Health"/>
+
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Politics"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Art"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Health"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tabMode"
+            android:layout_height="match_parent"
+
+
+
+
+            android:layout_margin="20dp"
+            android:id="@+id/recyleview"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
+</RelativeLayout>
